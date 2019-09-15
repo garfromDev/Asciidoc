@@ -1,0 +1,81 @@
+= Glossaire Asciidoc
+Stéphane FROMONT(c) 2019
+Version 0.1, 13.09.2019
+:sectnums:
+// définition tabel des matières
+:toc:
+:toclevels: 4
+:toc-title: My Content
+
+:description: Example utilisation AsciiDoc
+:keywords: AsciiDoc
+:imagesdir: ./img
+
+This is the optional preamble (an untitled section body). Useful for
+writing simple sectionless documents consisting only of a preamble.
+
+== First section
+information provenant de https://www.vogella.com/tutorials/AsciiDoc/article.html +
+// utiliser ' +' à la fin d'une ligne pour faire les saut de ligne
+référence vers un signet : <<test>>
+
+// liste numérotée
+. fds
+. sfsf
+.. truc +
+// import images
+
+image::./illustration1.png[]
+
+// citations
+[quote, Ben Parker, Spiderman Movie]
+____
+With great power comes great responsibility.
+____
+Différents styles possibles : +
+_italique_ +
+`highlighté` +
+*gras*
+
+
+* liste avec puces
+
+* bla
+
+** bla bla
+
+*** à différents niveaux
+
+// code
+[source,python, numbered]
+----
+def truc(self):
+    some_code()
+----
+
+
+== Second section
+.Ma joli table
+|===
+| col1 |col2
+
+|cell
+| truc
+
+|autre
+|remarque
+|===
+=== Sub section
+image::./illustration1.png[]
+
+==== Sub sub section
+[[test]]
+More test
+
+== Third section
+// insertion de fichiers externes
+
+[source, python]
+----
+include::test.py[]
+----
