@@ -1,2 +1,2 @@
 # Asciidoc
-Résumé rapide des fonctions Asciidoct
+Résumé rapide des fonctions Asciidoc
